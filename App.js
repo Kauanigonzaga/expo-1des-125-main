@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native'; 
 import { RFPercentage } from "react-native-responsive-fontsize";
 import Constants from 'expo-constants';
+import StackExemplo from './src/exemplos/stackExemplos';
 
 import Exemplo01 from './src/exemplos/ex01';
 import Exemplo02 from './src/exemplos/ex02'; 
@@ -30,7 +31,9 @@ import Revisao09 from './src/revisao/rev09';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Revisao09 />
+      <NavegationContainer>
+      <StackExemplo />
+      </NavegationContainer>
       <StatusBar style="light" />
     </View>
   );
